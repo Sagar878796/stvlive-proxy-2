@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>STV Live Player</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.compiled.js"></script>
+
+<style>
+
+body{
+margin:0;
+background:black;
+color:white;
+font-family:Arial;
+}
+
+#video{
+width:100%;
+height:60vh;
+background:black;
+}
+
+#channels{
+height:40vh;
+overflow-y:auto;
+background:#111;
+}
+
+.channel{
+padding:12px;
+border-bottom:1px solid #333;
+cursor:pointer;
+}
+
+.channel:hover{
+background:#222;
+}
+
+</style>
+
+</head>
+<body>
+
+<video id="video" controls autoplay></video>
+
+<div id="channels">Loading channels...</div>
+
+<script>
+
+const playlistUrl =
+"https://sagar878796.github.io/Stvlive/playlist.m3u";
+
+const video =
+document.getElementById("video");
+
+const player =
+new shaka.Player(video);
+
+
+// HEADERS FIX
+player.getNetworkingEngine().registerRequestFilter(
+(type, request)=>{
+
+request.headers['User-Agent'] =
+"Mozilla/5.0 (Linux; Android 13) Chrome/120 Mobile Safari/537.36";
+
+request.headers['Referer'] =
+"https://www.jiotv.com/";
+
+request.headers['Origin'] =
+"https://www.jiotv.com";
+
+request.allowCrossSiteCredentials = true;
+
+});
+
+
+async function loadPlaylist(){
+
+const res =
+await fetch(playlistUrl);
+
+const text =
+await res.text();
+
+const lines =
+text.split("\n");
+
+let channels = [];
+
+for(let i=0;i<lines.length;i++){
+
+if(lines[i].startsWith("#EXTINF")){
+
+const name =
+lines[i].split(",")[1];
+
+const url =
+lines[i+1];
+
+channels.push({
+name,
+url
+});
+
+}
+
+}
+
+showChannels(channels);
+
+}
+
+
+function showChannels(channels){
+
+const div =
+document.getElementById("channels");
+
+div.innerHTML = "";
+
+channels.forEach(ch=>{
+
+const el =
+document.createElement("div");
+
+el.className =
+"channel";
+
+el.innerText =
+ch.name;
+
+el.onclick = ()=> playChannel(ch.url);
+
+div.appendChild(el);
+
+});
+
+}
+
+
+async function playChannel(url){
+
+try{
+
+await player.load(url);
+
+console.log("Playing:",url);
+
+}catch(e){
+
+alert("Play error: "+e.message);
+
+}
+
+}
+
+
+loadPlaylist();
+
+</script>
+
+</body>
+</html>
