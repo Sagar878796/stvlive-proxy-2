@@ -9,7 +9,7 @@
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/allowipmpd_key.php?id=chlajabsdk
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/d3Yf3PHX/DRMLIVE-Aggressive-Logo.png" group-title="1-Playlist-Activation",Activate Playlist
-https://mix.drmlive.net/mix/actchaljabsdk.mpd?token=YWJTTzZKeWI2amJwZ3FJY0hHb1RNKzVsbjhtNVlGWmNCVVhHVHpaUjJnK2hTbXBWVmlzRU93aXpDZXprTDhrVm8yVjN5RzFSb1ZnM25aaFJ1Z2QxcW5qaEdhbkU2bWhoYmRjcUxHNFg2MUJXYjVwZVh2SGpCZjY4S2p4b1ErUWw=
+https://mix.drmlive.net/mix/actchaljabsdk.mpd?token=YWJTTzZKeWI2amJwZ3FJY0hHb1RNKzVsbjhtNVlGWmNCVVhHVHpaUjJnK2hTbXBWVmlzRU93aXpDZXprTDhrVm1vY1E1dVN5b3pWR25yVDNiKzRFdHEzcDUwVlVvbU1jNHN0Q3FiMXkrUWRFK1J3Tzdkck1GWEVoYWRnRGlEalo=
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://la.drmlive.net/tp/sling_ck?id=22
@@ -1422,7 +1422,7 @@ https://la.drmlive.net/tp/zee5/9z583533/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/9z583539/index.m3u8
 
-#EXTINF:-1 tvg-id="0-9-9z583537" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-9z583537/channel_list/1920x1080list88f947c280ae4bfab2b4458902af18e0.png" group-title="News", Zee News Kannada
+#EXTINF:-1 tvg-id="0-9-9z583537" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-9z583537/channel_list/1920x1080listfa6a3c19a1da4453bef07c08e59687db.png" group-title="News", Zee News Kannada
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/9z583537/index.m3u8
 
@@ -1498,7 +1498,7 @@ https://la.drmlive.net/tp/zee5/394/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/zeecafehd/index.m3u8
 
-#EXTINF:-1 tvg-id="0-9-zeebusiness" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebusiness/channel_list/1920x1080liste7f9cb0dbb2b4aea95f6f87f31bb0dba.png" group-title="News", Zee Business
+#EXTINF:-1 tvg-id="0-9-zeebusiness" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebusiness/channel_list/1920x1080list3eaf400b00cb4c83bf320df01fda3fbe.png" group-title="News", Zee Business
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/zeebusiness/index.m3u8
 
@@ -1522,15 +1522,15 @@ https://la.drmlive.net/tp/zee5/zeebiharjharkhand/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/zeehindustan/index.m3u8
 
-#EXTINF:-1 tvg-id="0-9-zeebanglacinema" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebanglacinema/channel_list/1920x1080listbbd91e5288344aeb9d05ac2aba5ebfa2.png" group-title="Movie", Zee Bangla Sonar
+#EXTINF:-1 tvg-id="0-9-zeebanglacinema" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebanglacinema/channel_list/1920x1080list63969e710a85462aacd4c38d07ce52af.png" group-title="Movie", Zee Bangla Sonar
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/zeebanglacinema/index.m3u8
 
-#EXTINF:-1 tvg-id="0-9-zeebangla" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebangla/channel_list/1920x1080listccb45723a35643a1819bf8220c28c00f.png" group-title="Entertainment", Zee Bangla HD
+#EXTINF:-1 tvg-id="0-9-zeebangla" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-zeebangla/channel_list/1920x1080listb2674154e8ac473f8f37ad418ac013ec.png" group-title="Entertainment", Zee Bangla HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/zeebangla/index.m3u8
 
-#EXTINF:-1 tvg-id="0-9-9z5383484" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-9z5383484/channel_list/1920x1080list3f04c02c186c4d9eb350f3f8eca09d69.png" group-title="Entertainment", Zee Bangla
+#EXTINF:-1 tvg-id="0-9-9z5383484" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-9z5383484/channel_list/1920x1080list907975089cce4bdf92d0d72c193d3fc5.png" group-title="Entertainment", Zee Bangla
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/9z5383484/index.m3u8
 
@@ -1582,7 +1582,7 @@ https://la.drmlive.net/tp/zee5/378/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/zeesalaam/index.m3u8
 
-#EXTINF:-1 tvg-id="0-9-261" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-261/channel_list/1920x1080list3588bf1480f74af3ae326a0a99b250c6.png" group-title="News", News 9
+#EXTINF:-1 tvg-id="0-9-261" tvg-logo="https://akamaividz2.zee5.com/image/upload/resources/0-9-261/channel_list/1920x1080list3a0be25954574b65920428521c20842f.png" group-title="News", News 9
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 https://la.drmlive.net/tp/zee5/261/index.m3u8
 
