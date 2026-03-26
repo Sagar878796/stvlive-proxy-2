@@ -9,7 +9,7 @@
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/allowipmpd_key.php?id=chlajabsdk
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/d3Yf3PHX/DRMLIVE-Aggressive-Logo.png" group-title="1-Playlist-Activation",Activate Playlist
-https://mix.drmlive.net/mix/actchaljabsdk.mpd?token=YWJTTzZKeWI2amJwZ3FJY0hHb1RNKzVsbjhtNVlGWmNCVVhHVHpaUjJnK2hTbXBWVmlzRU93aXpDZXprTDhrVi83VFYrZG1Vek5PRUtUVU9DVkRSekNXRjZTSDBNOFBjRzhMVzYwTlJKZzhjaEJuRTM3Z09vUTI0dWd4d1YyTXU=
+https://mix.drmlive.net/mix/actchaljabsdk.mpd?token=YWJTTzZKeWI2amJwZ3FJY0hHb1RNKzVsbjhtNVlGWmNCVVhHVHpaUjJnK2hTbXBWVmlzRU93aXpDZXprTDhrVmpYU2R4WmlxM2drNElMM2tpM1JFQWh1MEZmRWtyV3lhRXZuZnh3WklEbEdoeExqMWdvRFZFOE5xYzlPTElnS0g=
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://la.drmlive.net/tp/sling_ck?id=22
