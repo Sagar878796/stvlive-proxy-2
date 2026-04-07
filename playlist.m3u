@@ -9,7 +9,7 @@
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/allowipmpd_key.php?id=chlajabsdk
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/d3Yf3PHX/DRMLIVE-Aggressive-Logo.png" group-title="1-Playlist-Activation",Activate Playlist
-https://mix.drmlive.net/mix/actchaljabsdk.mpd?token=YWJTTzZKeWI2amJwZ3FJY0hHb1RNKzVsbjhtNVlGWmNCVVhHVHpaUjJnK2hTbXBWVmlzRU93aXpDZXprTDhrVjMyYm5qeVlBcXpJdW5QTTE4QWI5cHRZRW1LUGlVYVFyOXE5Ukx2N1o4Rzk4N1RSK3hoOUZlc0Urd0d5QkE5NVg=
+https://mix.drmlive.net/mix/actchaljabsdk.mpd?token=YWJTTzZKeWI2amJwZ3FJY0hHb1RNKzVsbjhtNVlGWmNCVVhHVHpaUjJnK2hTbXBWVmlzRU93aXpDZXprTDhrVmNqaXgrSlQwdTlGNTlkZk1NTFIxOEEzL2oyMVZnc09wZ2hOQjNzbHlnWmtoTkJ2bTZOWk9DOU43S3pGdXViK1E=
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://la.drmlive.net/tp/sling_ck?id=22
@@ -6860,6 +6860,11 @@ https://jt.drmlive.net/jiotvplus/1515.mpd
 #KODIPROP:inputstream.adaptive.license_key=https://jt.drmlive.net/jiotvplus/jtck?id=1516
 https://jt.drmlive.net/jiotvplus/1516.mpd
 
+#EXTINF:-1 tvg-id="1518" tvg-name="Moon TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Moon_Tv.png" group-title="Entertainment", Moon TV
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://jt.drmlive.net/jiotvplus/jtck?id=1518
+https://jt.drmlive.net/jiotvplus/1518.mpd
+
 #EXTINF:-1 tvg-id="1521" tvg-name="Birla Brainiacs" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Birla_Brainiacs.png" group-title="Educational", Birla Brainiacs
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://jt.drmlive.net/jiotvplus/jtck?id=1521
@@ -7406,10 +7411,8 @@ https://jt.drmlive.net/jiotvplus/1965.mpd
 #KODIPROP:inputstream.adaptive.license_key=https://jt.drmlive.net/jiotvplus/jtck?id=1967
 https://jt.drmlive.net/jiotvplus/1967.mpd
 
-#EXTINF:-1 tvg-id="1972" tvg-name="Top News Marathi" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Top_News_Marathi.png" group-title="News", Top News Marathi
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://jt.drmlive.net/jiotvplus/jtck?id=1972
-https://jt.drmlive.net/jiotvplus/1972.mpd
+#EXTINF:-1 tvg-id="1972" tvg-name="Top News Marathi" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/topnewsmarathi.png" group-title="News", Top News Marathi
+https://jt.drmlive.net/jiotvplus/1972.m3u8
 
 #EXTINF:-1 tvg-id="1973" tvg-name="ETV HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETV_HD.png" group-title="Entertainment", ETV HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -8873,12 +8876,6 @@ https://jt.drmlive.net/jiotvplus/3295.mpd
 #KODIPROP:inputstream.adaptive.license_key=https://jt.drmlive.net/jiotvplus/jtck?id=3299
 https://jt.drmlive.net/jiotvplus/3299.mpd
 
-#EXTINF:-1 tvg-id="3302" tvg-name="T SAT Nipuna" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/tsatnipuna.png" group-title="Educational", T SAT Nipuna
-https://jt.drmlive.net/jiotvplus/3302.m3u8
-
-#EXTINF:-1 tvg-id="3304" tvg-name="T SAT Vidya" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/tsatvidya.png" group-title="Educational", T SAT Vidya
-https://jt.drmlive.net/jiotvplus/3304.m3u8
-
 #EXTINF:-1 tvg-id="3310" tvg-name="MNS News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/MNS_News.png" group-title="News", MNS News
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://jt.drmlive.net/jiotvplus/jtck?id=3310
@@ -9225,6 +9222,9 @@ https://jt.drmlive.net/jiotvplus/3435.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://jt.drmlive.net/jiotvplus/jtck?id=3436
 https://jt.drmlive.net/jiotvplus/3436.mpd
+
+#EXTINF:-1 tvg-id="3438" tvg-name="Nation News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/nationnews.png" group-title="News", Nation News
+https://jt.drmlive.net/jiotvplus/3438.m3u8
 
 #EXTINF:-1 tvg-id="3439" tvg-name="Akhon kolkata" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ekhonkolkata.png" group-title="News", Akhon kolkata
 https://jt.drmlive.net/jiotvplus/3439.m3u8
