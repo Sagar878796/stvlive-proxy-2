@@ -9,7 +9,7 @@
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_key=https://mix.drmlive.net/mix/allowipmpd_key.php?id=chlajabsdk
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/d3Yf3PHX/DRMLIVE-Aggressive-Logo.png" group-title="1-Playlist-Activation",Activate Playlist
-https://mix.drmlive.net/mix/actchaljabsdk.mpd?token=YWJTTzZKeWI2amJwZ3FJY0hHb1RNKzVsbjhtNVlGWmNCVVhHVHpaUjJnK2hTbXBWVmlzRU93aXpDZXprTDhrVmNqaXgrSlQwdTlGNTlkZk1NTFIxOEEzL2oyMVZnc09wZ2hOQjNzbHlnWmtoTkJ2bTZOWk9DOU43S3pGdXViK1E=
+https://mix.drmlive.net/mix/actchaljabsdk.mpd?token=YWJTTzZKeWI2amJwZ3FJY0hHb1RNKzVsbjhtNVlGWmNCVVhHVHpaUjJnK2hTbXBWVmlzRU93aXpDZXprTDhrVmpsZTQ4ekJKZnl3czAxUkxUcUZrNmQzRzh4OUMvVHZISmRjV0grREdBNkloa3JxWDNrQ1lQL0xRQXZUV3lPTkk=
 
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://la.drmlive.net/tp/sling_ck?id=22
@@ -8875,6 +8875,12 @@ https://jt.drmlive.net/jiotvplus/3295.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://jt.drmlive.net/jiotvplus/jtck?id=3299
 https://jt.drmlive.net/jiotvplus/3299.mpd
+
+#EXTINF:-1 tvg-id="3302" tvg-name="T SAT Nipuna" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/tsatnipuna.png" group-title="Educational", T SAT Nipuna
+https://jt.drmlive.net/jiotvplus/3302.m3u8
+
+#EXTINF:-1 tvg-id="3304" tvg-name="T SAT Vidya" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/tsatvidya.png" group-title="Educational", T SAT Vidya
+https://jt.drmlive.net/jiotvplus/3304.m3u8
 
 #EXTINF:-1 tvg-id="3310" tvg-name="MNS News" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/MNS_News.png" group-title="News", MNS News
 #KODIPROP:inputstream.adaptive.license_type=clearkey
