@@ -1,35 +1,67 @@
-name: Update Playlist
+const express = require("express");
+const axios = require("axios");
+const app = express();
 
-permissions:
-  contents: write
+app.get("/play", async (req, res) => {
+    let url = req.query.url;
 
-on:
-  schedule:
-    - cron: "*/10 * * * *"
-  workflow_dispatch:
+    if (!url) return res.send("No URL");
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
+    try {
+        const response = await axios({
+            method: "GET",
+            url: url,
+            responseType: "stream",
+            headers: {
+                "User-Agent": "Mozilla/5.0",
+                "Referer": url,
+                "Origin": url
+            }
+        });
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+        // Important headers pass karo
+        res.setHeader("Content-Type", response.headers["content-type"]);
+        res.setHeader("Access-Control-Allow-Origin", "*");
 
-      - name: Download playlist
-        run: |
-          curl -L \
-          -H "User-Agent: OTT Navigator/1.6.9.4 (Linux;Android 10)" \
-          -H "Referer: https://la.drmlive.net/" \
-          -H "Origin: https://la.drmlive.net" \
-          "https://la.drmlive.net/tp/playlist" \
-          -o playlist.m3u
+        response.data.pipe(res);
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add playlist.m3u
-          git commit -m "Auto update playlist" || echo "No changes"
-          git pull --rebase origin main
-          git push origin main
+    } catch (err) {
+        console.log(err.message);
+        res.status(500).send("Stream Error");
+    }
+});
+
+
+// 🔥 M3U8 Playlist Rewrite (VERY IMPORTANT)
+app.get("/m3u8", async (req, res) => {
+    let url = req.query.url;
+
+    if (!url) return res.send("No URL");
+
+    try {
+        const response = await axios.get(url, {
+            headers: {
+                "User-Agent": "Mozilla/5.0"
+            }
+        });
+
+        let data = response.data;
+
+        // Segment URLs ko proxy se pass karo
+        data = data.replace(/(https?:\/\/[^\s]+)/g, (match) => {
+            return `/play?url=${encodeURIComponent(match)}`;
+        });
+
+        res.setHeader("Content-Type", "application/vnd.apple.mpegurl");
+        res.send(data);
+
+    } catch (err) {
+        res.status(500).send("M3U8 Error");
+    }
+});
+
+app.get("/", (req, res) => {
+    res.send("IPTV Proxy Running 🚀");
+});
+
+app.listen(3000, () => console.log("Server started"));
