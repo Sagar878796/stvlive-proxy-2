@@ -2,9 +2,30 @@ const express = require("express");
 const axios = require("axios");
 const app = express();
 
-app.get("/play", async (req, res) => {
-    let url = req.query.url;
+// 🔹 FETCH M3U (IMPORTANT)
+app.get("/fetch", async (req, res) => {
+    const url = req.query.url;
+    if (!url) return res.send("No URL");
 
+    try {
+        const response = await axios.get(url, {
+            headers: {
+                "User-Agent": "Mozilla/5.0"
+            },
+            timeout: 10000
+        });
+
+        res.setHeader("Content-Type", "text/plain");
+        res.send(response.data);
+
+    } catch (err) {
+        res.status(500).send("Fetch Error");
+    }
+});
+
+// 🔹 STREAM PROXY
+app.get("/play", async (req, res) => {
+    const url = req.query.url;
     if (!url) return res.send("No URL");
 
     try {
@@ -14,40 +35,30 @@ app.get("/play", async (req, res) => {
             responseType: "stream",
             headers: {
                 "User-Agent": "Mozilla/5.0",
-                "Referer": url,
-                "Origin": url
-            }
+                "Referer": url
+            },
+            timeout: 15000
         });
 
-        // Important headers pass karo
         res.setHeader("Content-Type", response.headers["content-type"]);
         res.setHeader("Access-Control-Allow-Origin", "*");
 
         response.data.pipe(res);
 
     } catch (err) {
-        console.log(err.message);
         res.status(500).send("Stream Error");
     }
 });
 
-
-// 🔥 M3U8 Playlist Rewrite (VERY IMPORTANT)
+// 🔹 M3U8 REWRITE
 app.get("/m3u8", async (req, res) => {
-    let url = req.query.url;
-
+    const url = req.query.url;
     if (!url) return res.send("No URL");
 
     try {
-        const response = await axios.get(url, {
-            headers: {
-                "User-Agent": "Mozilla/5.0"
-            }
-        });
-
+        const response = await axios.get(url);
         let data = response.data;
 
-        // Segment URLs ko proxy se pass karo
         data = data.replace(/(https?:\/\/[^\s]+)/g, (match) => {
             return `/play?url=${encodeURIComponent(match)}`;
         });
@@ -61,7 +72,7 @@ app.get("/m3u8", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-    res.send("IPTV Proxy Running 🚀");
+    res.send("🔥 Stable IPTV Proxy Running");
 });
 
 app.listen(3000, () => console.log("Server started"));
